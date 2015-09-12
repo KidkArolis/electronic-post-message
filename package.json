@@ -1,0 +1,25 @@
+{
+  "name": "electronic-post-message",
+  "version": "1.0.0",
+  "description": "A postMessage polyfill for electron webview",
+  "main": "epm.js",
+  "scripts": {
+    "test": "karma start --single-run && standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/KidkArolis/electronic-post-message.git"
+  },
+  "keywords": [
+    "electron",
+    "postMessage",
+    "ipc",
+    "webview"
+  ],
+  "author": "Karolis Narkevicius <karolis.n@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KidkArolis/electronic-post-message/issues"
+  },
+  "homepage": "https://github.com/KidkArolis/electronic-post-message#readme"
+}
