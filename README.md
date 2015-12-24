@@ -1,6 +1,6 @@
 # electronic-post-message
 
-A postMessage polyfill for electron webview. Useful if you want to reuse existing postMessage libraries (e.g. [secret-door](https://github.com/QubitProducts/secret-door) to talk with code inside an electron webview.
+A postMessage polyfill for electron webview. Useful if you want to reuse existing postMessage libraries to talk with code inside an electron webview (e.g. [secret-door](https://github.com/QubitProducts/secret-door)).
 
 ## Usage
 
