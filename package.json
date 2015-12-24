@@ -4,7 +4,8 @@
   "description": "A postMessage polyfill for electron webview",
   "main": "epm.js",
   "scripts": {
-    "test": "karma start --single-run && standard"
+    "test": "standard",
+    "release": "npm run test && release"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,13 @@
   },
   "homepage": "https://github.com/KidkArolis/electronic-post-message#readme",
   "devDependencies": {
-    "kn-release": "^1.0.1"
+    "kn-release": "^1.0.1",
+    "standard": "^5.4.1"
+  },
+  "standard": {
+    "globals": [
+      "ipc",
+      "MessageEvent"
+    ]
   }
 }

@@ -10,7 +10,7 @@ module.exports = function installPostMessage (options) {
     proxyIframe.contentWindow.postMessage = function (msgStr) {
       options.webview.send(options.channelName, msgStr)
     }
-    options.webview.addEventListener('ipc-message', function(event) {
+    options.webview.addEventListener('ipc-message', function (event) {
       if (event.channel === options.channelName) {
         var msgStr = event.args[0].data
         dispatch(msgStr, proxyIframe.contentWindow)
@@ -38,6 +38,6 @@ function dispatch (msgStr, source) {
     cancelable: false,
     data: msgStr,
     source: source
-  });
+  })
   window.dispatchEvent(message)
 }
