@@ -1,6 +1,6 @@
 {
   "name": "electronic-post-message",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A postMessage polyfill for electron webview",
   "main": "epm.js",
   "scripts": {
